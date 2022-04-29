@@ -33,4 +33,9 @@ describe('stringCalculator', () => {
         
         expect(calculator.add("//;\n1;2")).toBe(3);
     });
+
+    test("String = '-1', toThrow 'Negatives not allowed'", () => {
+        
+        expect(() => calculator.add("-1").toThrow('Negatives not allowed. [-1]'));
+    });
 });
