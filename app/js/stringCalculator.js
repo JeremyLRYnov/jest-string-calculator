@@ -2,12 +2,16 @@ class stringCalculator {
 
     add(str) {
 
-        if (str == "")
-        return 0;
-        if (str == "1")
-        return 1;
-        if (str == "1,2")
-        return 3;
+        let numbersTable = str.match(/\d+/g);
+
+        let calcul = 0;
+
+        for (var i in numbersTable) {
+
+            calcul += Number(numbersTable[i])
+        }
+        
+        return calcul;
     }
 }
 
