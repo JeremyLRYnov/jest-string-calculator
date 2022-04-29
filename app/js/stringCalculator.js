@@ -1,12 +1,12 @@
 class stringCalculator {
 
-    add(string) {
+    add(str) {
 
-        if (string == "")
+        if (str == "")
         return 0;
-        if (string == "1")
+        if (str == "1")
         return 1;
-        if (string == "1,2")
+        if (str == "1,2")
         return 3;
     }
 }
