@@ -18,4 +18,14 @@ describe('stringCalculator', () => {
         
         expect(calculator.add("1,2")).toBe(3);
     });
+
+    test("String = '1,2,3,4,5,6,7,8,9', return 1", () => {
+        
+        expect(calculator.add("1,2,3,4,5,6,7,8,9")).toBe(45);
+    });
+
+    test("String = '1\n2,3', return 6", () => {
+        
+        expect(calculator.add("1\n2,3")).toBe(6);
+    });
 });
